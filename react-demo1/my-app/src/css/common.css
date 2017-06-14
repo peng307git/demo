@@ -1,0 +1,15 @@
+footer{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    background: teal;
+}
+header{
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    text-align: center;
+    color: #000;
+    background:blanchedalmond;
+}

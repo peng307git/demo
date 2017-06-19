@@ -67,15 +67,15 @@
         <script>
             var data = DATA;
             var newdataen = {};
-            var newdatacn = {};
+            var newdatacn;
             for(var i in data){
-                //console.log(data[i].一级功能+data[i].二级功能+data[i].三级功能+data[i].简体中文);
-               var  cn = data[i].一级功能+"-"+data[i].二级功能+"-"+data[i].三级功能+"-cn" ;
-               var  en = data[i].一级功能+"-"+data[i].二级功能+"-"+data[i].三级功能+"-en" ;
-               newdatacn[cn] = data[i].简体中文;
-               newdataen[en] = data[i].英文;
+               var  cn = data[i].一级功能+"-"+data[i].二级功能+"-"+data[i].三级功能+"-cn ="+data[i].简体中文 ;
+              // var  en = data[i].一级功能+"-"+data[i].二级功能+"-"+data[i].三级功能+"-en" ;
+               newdatacn += cn;
+              // newdataen[en] = data[i].英文;
                
             }
+            console.log(newdatacn);
               document.getElementById("demo").innerHTML=JSON.stringify(newdataen);
         </script>
     </body>
